@@ -1,0 +1,29 @@
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px){
+    .top{
+        background-color: red;
+    }
+    nav{
+        display: inline-block;
+    }
+    .logo, .menu-items{
+        width: 100%;
+    }
+    .menu-items li a{
+        font-size: .3rem;
+    }
+    .info{
+        text-align: center;
+        height: 50px;
+    }
+    .info h2{
+        font-size: 1.2rem;
+    }
+    .card1{
+        width: 100%;
+        text-align: center;
+    }
+}
