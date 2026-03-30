@@ -159,31 +159,30 @@
     
 
     </section>
-    <section class="container" style="background-image: url('./images/Background\ \(6\).png'); background-repeat: no-repeat; background-size: 100% 100%;">
+    <section id="contact" class="container" style="background-image: url('./images/Background\ \(6\).png'); background-repeat: no-repeat; background-size: 100% 100%;">
         <img src="images/Background (6).png">
           <div class="card6">
-                <h4>Request a free consultantion</h4>
-                <p>take a first step towards fixing your credit-sing up for a<br>
-                free credit Construction</p>
-                <form>
-                    <label>Name<span style="color: red;">*</span></label>
+                <h4>Request a free consultation</h4>
+                <p>Take the first step towards fixing your credit—sign up for a free credit consultation</p>
+                <form id="consultationForm">
+                    <label for="consultationName">Name<span style="color: red;">*</span></label>
                     <br>
-                    <input type="text" required placeholder="Name" style="width: 90%; height: 30px;">
+                    <input id="consultationName" type="text" name="name" required placeholder="Name" style="width: 90%; height: 30px;">
                     <br>
-                    <label>Email<span style="color: red;">*</span></label>
+                    <label for="consultationEmail">Email<span style="color: red;">*</span></label>
                     <br>
-                    <input type="email" required placeholder="Email" style="width: 90%; height: 30px;">
+                    <input id="consultationEmail" type="email" name="email" required placeholder="Email" style="width: 90%; height: 30px;">
                     <br>
-                    <label>Phone<span style="color: red;">*</span></label>
+                    <label for="consultationPhone">Phone<span style="color: red;">*</span></label>
                     <br>
-                    <input type="number" required placeholder="phone" style="width: 90%; height: 30px;">
+                    <input id="consultationPhone" type="tel" name="phone" required placeholder="Phone" style="width: 90%; height: 30px;">
                     <br>
-                    <label>Message<span style="color: red;"></span></label>
+                    <label for="consultationMessage">Message</label>
                     <br>
-                    <textarea required placeholder="Message"></textarea>
+                    <textarea id="consultationMessage" name="message" placeholder="Message" style="width: 90%; min-height: 80px;"></textarea>
                     <br>
-                    <button>SEND</button></form>
-
+                    <button type="submit" id="submitBtn">SEND</button>
+                    <div id="formStatus"></div>
                 </form>
           </div>
     </section>
@@ -230,5 +229,6 @@
         </div>
     </section>
     
+    <script src="main.js"></script>
 </body>
 </html>
